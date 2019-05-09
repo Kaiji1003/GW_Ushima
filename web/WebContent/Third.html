@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="third" method="post">
+	<!-- 名前 -->
+		<h1>お申し込み入力画面</h1>
+		お名前 :<input type="text" name="name"> <br>
+
+		<!-- 年齢 -->
+		 年齢 :<select name="age">
+			<option value=""></option>
+			<option value="10">10</option>
+			<option value="20">20</option>
+			<option value="30">30</option>
+			<option value="40">40</option>
+			<option value="60">50</option>
+			<option value="60">60</option>
+			<option value="70">70</option>
+		</select>
+
+		<!-- 性別 -->
+		<br> 性別 :<input type="radio" name="gender" value="男性" checked="checked">男性
+		<input type="radio" name="gender" value="女性">女性 <br>
+
+		<!-- 言語 -->
+		興味のある言語 :<input type="checkbox" name="language" value="java">java
+		<input type="checkbox" name="language" value="C言語">C言語 <input
+			type="checkbox" name="language" value="PHP">PHP <br>
+
+		<!-- 一言 -->
+		<p>なにか一言 </p>
+		<textarea name="other" cols="30" rows="5"></textarea>
+		<br>
+
+		<!-- 送信ボタンの設置 -->
+		<input type="submit" value="送信">
+	</form>
+</body>
+</html>
